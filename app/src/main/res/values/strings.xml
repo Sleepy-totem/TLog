@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TLog</string>
+    <string name="widget_description">Clock in/out and week total</string>
+</resources>

@@ -1,0 +1,30 @@
+# Build outputs
+build/
+app/build/
+.gradle/
+captures/
+
+# Android SDK downloaded by setup.ps1
+android-sdk/
+.gradle-dist/
+local.properties
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated
+app/schemas/
+
+# Signing (personal keystore, never commit)
+*.keystore
+*.jks
+
+# Built APKs (distributed via GitHub Releases + Drive, not git)
+*.apk
+
