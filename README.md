@@ -73,30 +73,3 @@ TLog/
 ├── install.ps1
 └── README.md
 ```
-
-## Export: what gets filled
-
-When you hit **Export** the app copies `Standard_TS_Mon-Sun.xlsx` from assets, modifies the worksheet in memory, and writes `TLog_WeekEnding_YYYY-MM-DD.xlsx` to `Documents/TLog/` via `MediaStore`.
-
-Cells populated per export:
-
-| Cell    | Value                                                |
-| ------- | ---------------------------------------------------- |
-| J1      | Your name (Jordan Belsito)                           |
-| J4      | Client name (Bachner Electro USA Inc)                |
-| J6      | State of work (South Carolina)                       |
-| J9      | Week ending date — Sunday of the week, `MM/DD/YYYY`  |
-| B14-32  | Per-day date                                         |
-| E14-32  | Clock-in time (earliest that day)                    |
-| G14-32  | Clock-out time (latest that day)                     |
-| F14-32  | Lunch break — from Settings → default lunch hours    |
-| H14-32  | Hours for the day (sum of that day's entries)        |
-| H35     | Weekly total                                         |
-| B38     | Signature (Jordan Alan Belsito)                      |
-| J38     | Date stamp — the day you hit Export                  |
-
-All defaults are editable in **Settings** so the same app works if the client, state, or employee name ever change.
-
-## Ideas for future features
-
-Listed in the main chat — pick the ones you want, I'll implement.
