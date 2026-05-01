@@ -32,7 +32,7 @@ Prereq: JDK 17 (Temurin) — you already have it at `C:\Program Files\Eclipse Ad
 .\build.ps1 -Variant release     # smaller, minified; signed with your own keystore
 ```
 
-## Install on the Samsung S26 Ultra (no USB tools needed)
+## Install the apk
 
 1. Transfer `TLog.apk` to the phone.
 2. On the phone open **Files** / **My Files** and tap `TLog.apk`.
