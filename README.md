@@ -1,6 +1,6 @@
 # TLog
 
-Personal time-logging Android app. Clock in/out, view the weekly timecard, and export a pre-filled `Standard_TS_Mon-Sun.xlsx` timesheet to `Documents/TLog/` on the device.
+Personal time-logging Android app. Clock in/out, view the weekly timecard, and export a pre-filled timesheet to `Documents/TLog/` on the device.
 
 ## Stack
 
@@ -32,19 +32,13 @@ Prereq: JDK 17 (Temurin) — you already have it at `C:\Program Files\Eclipse Ad
 .\build.ps1 -Variant release     # smaller, minified; signed with your own keystore
 ```
 
-Both paths copy the final APK to the project root as **`TLog.apk`**.
-
-First `release` build generates `tlog-release.keystore` automatically (password `tlogkey`). Keep that file — every future release build must use the same keystore, otherwise Android will refuse to upgrade the installed app over a different signature.
-
 ## Install on the Samsung S26 Ultra (no USB tools needed)
 
-1. Transfer `TLog.apk` to the phone — USB drag-and-drop to `Downloads/`, email attachment, Google Drive, whatever is easiest.
+1. Transfer `TLog.apk` to the phone.
 2. On the phone open **Files** / **My Files** and tap `TLog.apk`.
 3. Android will ask to allow installs from your file manager the first time:
    **Settings → Apps → Special access → Install unknown apps** → pick your file manager → **Allow from this source**. Go back and tap `TLog.apk` again.
 4. Tap **Install**. Done — icon appears in the app drawer.
-
-To update later: build again, transfer the new `TLog.apk`, tap install. If you ever switch between `debug` and `release` variants, uninstall the old one first (they have different package IDs / signatures).
 
 ## Project layout
 
